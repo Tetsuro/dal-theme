@@ -1,3 +1,7 @@
 .site-footer {
   display: none;
 }
+
+p {
+  margin-bottom: var(--global--spacing-unit);
+}
