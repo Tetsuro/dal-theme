@@ -1,3 +1,7 @@
+// DAL overrides
+
+// --global--font-primary: 'Iosevka'
+
 .site-footer {
   display: none;
 }
@@ -5,3 +9,8 @@
 p {
   margin-bottom: var(--global--spacing-unit);
 }
+
+body {
+  font-family: 'Iosevka', sans-serif;
+}
+

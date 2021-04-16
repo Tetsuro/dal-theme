@@ -1,1 +1,7 @@
 // Do we need to serve a font? Add the @font-face styles here.
+
+@font-face {
+  font-family: 'Iosevka';
+  src:  url('./assets/fonts/iosevka-regular.woff2') format('woff2'),
+        url('./assets/fonts/iosevka-regular.woff') format('woff');
+}
