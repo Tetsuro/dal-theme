@@ -6,8 +6,8 @@ $baseline-unit: 10px;
 :root {
 
 	/* Font Family */
-	--global--font-primary: 'Iosevka';
-	--global--font-secondary: 'Iosevka';
+	--global--font-primary: "Iosevka", "Times", sans-serif;
+	--global--font-secondary: "Iosevka", "Times", sans-serif;
 
 	/* Font Size */
 	--global--font-size-base: 1.25rem; // 20px / 16px

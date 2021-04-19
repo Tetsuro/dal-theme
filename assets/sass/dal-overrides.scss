@@ -1,7 +1,6 @@
 // DAL overrides
 
 // --global--font-primary: 'Iosevka'
-
 .site-footer {
   display: none;
 }
@@ -14,3 +13,6 @@ body {
   font-family: 'Iosevka', sans-serif;
 }
 
+#wpadminbar {
+  display: none;
+}
