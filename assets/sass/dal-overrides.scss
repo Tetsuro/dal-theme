@@ -74,3 +74,15 @@ body {
 	}
 }
 
+.site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
+	@include media(mobile-only) {
+		top: 0;
+	}	
+}
+
+.primary-navigation {
+	// Vertically centre
+	@include media(mobile-only) {
+		top: 7px;
+	}
+}
