@@ -16,3 +16,12 @@ body {
 #wpadminbar {
 	display: none;
 }
+
+.site-header {
+	padding: 0;
+
+	@include media(mobile-only) {
+		padding-top: calc(0.75 * var(--global--spacing-vertical));
+		padding-bottom: calc(2 * var(--global--spacing-vertical));
+	}
+}
