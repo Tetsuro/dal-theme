@@ -1,3 +1,4 @@
+$dal-orange: #EB6142;
 // DAL overrides
 
 // --global--font-primary: 'Iosevka'
@@ -25,3 +26,51 @@ body {
 		padding-bottom: calc(2 * var(--global--spacing-vertical));
 	}
 }
+
+.site-main {
+	padding-top: 0;
+}
+
+.site-branding {
+	margin-top: 0;
+}
+
+.custom-logo-link {
+	display: inline-block;
+}
+
+.entry-title,
+.entry-header {
+	display: none;
+}
+
+.entry-content {
+	margin-top: 0 !important;
+}
+
+.primary-navigation a {
+
+	&:hover,
+	&:focus {
+		text-decoration: none !important;
+		box-shadow: 0 3px 0 0 $dal-orange;
+		background-color: transparent !important;
+	}
+
+	&:active {
+		color: $dal-orange !important;
+	}
+}
+
+.current-menu-item > a:first-child,
+.primary-navigation .current_page_item > a:first-child {
+	color: $dal-orange;
+	text-decoration: none;
+	box-shadow: 0 3px 0 0 $dal-orange;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
