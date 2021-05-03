@@ -1,4 +1,4 @@
-$dal-orange: #EB6142;
+$dal-orange: #eb6142;
 // DAL overrides
 
 // --global--font-primary: 'Iosevka'
@@ -52,6 +52,7 @@ body {
 
 	&:hover,
 	&:focus {
+		color: $dal-orange !important;
 		text-decoration: none !important;
 		box-shadow: 0 3px 0 0 $dal-orange;
 		background-color: transparent !important;
@@ -77,7 +78,7 @@ body {
 .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
 	@include media(mobile-only) {
 		top: 0;
-	}	
+	}
 }
 
 .primary-navigation {
@@ -86,3 +87,29 @@ body {
 		top: 7px;
 	}
 }
+
+/* Topbar */
+.dal-topbar {
+	background-color: #f0eded;
+	text-align: right;
+}
+
+.dal-topbar-container {
+	max-width: var(--responsive--alignwide-width);
+	margin: 0 auto;
+}
+
+.language-menu {
+	display: flex;
+	list-style: none;
+	justify-content: end;
+
+	li:first-child {
+		margin-right: 20px;
+	}
+
+	@include media(mobile-only) {
+		display: none;
+	}
+}
+
