@@ -111,5 +111,10 @@ body {
 	@include media(mobile-only) {
 		display: none;
 	}
+
+	.current-lang a {
+		color: $dal-orange;
+		text-decoration: none;
+	}
 }
 
