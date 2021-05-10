@@ -21,6 +21,7 @@ body {
 .site-header {
 	padding: 0;
 	padding-bottom: calc(2 * var(--global--spacing-vertical));
+	justify-content: space-between;
 
 	@include media(mobile-only) {
 		padding-top: calc(0.75 * var(--global--spacing-vertical));
@@ -34,6 +35,16 @@ body {
 
 .site-branding {
 	margin-top: 0;
+}
+
+.site-logo {
+	margin-right: 0;
+}
+
+#site-navigation,
+.site-logo,
+.menu-button-container {
+	position: initial !important;
 }
 
 .custom-logo-link {
@@ -92,6 +103,7 @@ body {
 .dal-topbar {
 	background-color: #f0eded;
 	text-align: right;
+	padding: 5px 0;
 }
 
 .dal-topbar-container {
@@ -107,10 +119,6 @@ body {
 
 	li:first-child {
 		margin-right: 20px;
-	}
-
-	@include media(mobile-only) {
-		display: none;
 	}
 
 	.current-lang a {
