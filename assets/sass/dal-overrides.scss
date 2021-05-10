@@ -1,3 +1,4 @@
+$dal-orange: #eb6142;
 // DAL overrides
 
 // --global--font-primary: 'Iosevka'
@@ -15,4 +16,124 @@ body {
 
 #wpadminbar {
 	display: none;
+}
+
+.site-header {
+	padding: 0;
+	padding-bottom: calc(2 * var(--global--spacing-vertical));
+
+	@include media(mobile-only) {
+		padding-top: calc(0.75 * var(--global--spacing-vertical));
+		padding-bottom: calc(2 * var(--global--spacing-vertical));
+	}
+}
+
+.site-main {
+	padding-top: 0;
+}
+
+.site-branding {
+	margin-top: 0;
+}
+
+.custom-logo-link {
+	display: inline-block;
+}
+
+.post-thumbnail {
+	display: none;
+}
+
+.entry-content {
+	margin-top: 0 !important;
+}
+
+.primary-navigation a {
+
+	&:hover,
+	&:focus {
+		color: $dal-orange !important;
+		text-decoration: none !important;
+		box-shadow: 0 3px 0 0 $dal-orange;
+		background-color: transparent !important;
+	}
+
+	&:active {
+		color: $dal-orange !important;
+	}
+}
+
+.current-menu-item > a:first-child,
+.primary-navigation .current_page_item > a:first-child {
+	color: $dal-orange;
+	text-decoration: none;
+	box-shadow: 0 3px 0 0 $dal-orange;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+.site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
+	@include media(mobile-only) {
+		top: 0;
+	}
+}
+
+.primary-navigation {
+	// Vertically centre
+	@include media(mobile-only) {
+		top: 7px;
+	}
+}
+
+/* Topbar */
+.dal-topbar {
+	background-color: #f0eded;
+	text-align: right;
+}
+
+.dal-topbar-container {
+	max-width: var(--responsive--alignwide-width);
+	margin: 0 auto;
+}
+
+.language-menu {
+	display: flex;
+	list-style: none;
+	justify-content: end;
+	font-size: 1rem;
+
+	li:first-child {
+		margin-right: 20px;
+	}
+
+	@include media(mobile-only) {
+		display: none;
+	}
+
+	.current-lang a {
+		color: $dal-orange;
+		text-decoration: none;
+	}
+}
+
+.singular {
+
+	.entry-title {
+		font-size: 4rem;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	.entry-header {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: calc(2 * var(--global--spacing-vertical));
+	}
+
+	.has-post-thumbnail .entry-header {
+		padding-bottom: calc(2 * var(--global--spacing-vertical));
+	}
 }

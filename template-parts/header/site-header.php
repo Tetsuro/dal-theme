@@ -13,6 +13,12 @@ $wrapper_classes .= ( true === get_theme_mod( 'display_title_and_tagline', true 
 $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 ?>
 
+<nav class="dal-topbar">
+	<div class="dal-topbar-container">
+		<ul class="language-menu"><?php pll_the_languages();?></ul>
+	</div>
+</nav>
+
 <header id="masthead" class="<?php echo esc_attr( $wrapper_classes ); ?>" role="banner">
 
 	<?php get_template_part( 'template-parts/header/site-branding' ); ?>
