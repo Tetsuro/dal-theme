@@ -138,7 +138,7 @@ body {
 	.entry-header {
 		border-bottom: none;
 		margin-bottom: 0;
-		padding-bottom: calc(2 * var(--global--spacing-vertical));
+		padding: calc(2 * var(--global--spacing-vertical)) 0;
 	}
 
 	.has-post-thumbnail .entry-header {
