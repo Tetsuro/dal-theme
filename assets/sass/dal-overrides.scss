@@ -38,6 +38,11 @@ p {
 	position: initial !important;
 }
 
+.primary-navigation-open .menu-button-container {
+	position: fixed !important;
+	top: 0;
+}
+
 .custom-logo-link {
 	display: inline-block;
 }
