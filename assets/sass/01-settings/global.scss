@@ -6,8 +6,8 @@ $baseline-unit: 10px;
 :root {
 
 	/* Font Family */
-	--global--font-primary: "Iosevka", "Times New Roman", sans-serif;
-	--global--font-secondary: "Iosevka", "Times New Roman", sans-serif;
+	--global--font-primary: "Catamaran", "Times New Roman", sans-serif;
+	--global--font-secondary: "Catamaran", "Times New Roman", sans-serif;
 
 	/* Font Size */
 	--global--font-size-base: 1.25rem; // 20px / 16px
@@ -27,7 +27,7 @@ $baseline-unit: 10px;
 	--global--line-height-page-title: 1.1;
 
 	/* Headings */
-	--heading--font-family: var(--global--font-primary);
+	--heading--font-family: "Iosevka", "Times New Roman", sans-serif;
 
 	--heading--font-size-h6: var(--global--font-size-xs);
 	--heading--font-size-h5: var(--global--font-size-sm);

@@ -1,17 +1,8 @@
 $dal-orange: #eb6142;
-// DAL overrides
-
-// --global--font-primary: 'Iosevka'
-.site-footer {
-	display: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;700&display=swap');
 
 p {
 	margin-bottom: var(--global--spacing-unit);
-}
-
-body {
-	font-family: Iosevka, sans-serif;
 }
 
 #wpadminbar {
@@ -154,4 +145,23 @@ body {
 .remove-top-margin {
 	padding-top: 0 !important;
 	margin-top: 0 !important;
+}
+
+// Footer
+.site-footer > .site-info {
+	display: flex;
+	justify-content: space-between;
+	border-top-width: 1px;
+}
+
+.no-widgets .site-footer {
+	margin-top: 0;
+}
+
+.footer-loc {
+	text-align: center;
+}
+
+.footer-socials {
+	text-align: right;
 }
